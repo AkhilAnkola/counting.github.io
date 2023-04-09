@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+
+body{
+  max-width: 100%;
+  max-height: 100%;
+  background-color: black
+}
+
+p {  
+  text-align: left;  
+  font-size: 20px;  
+  margin-top: -5px;  
+}  
+#clocks > div{  
+    padding: 12px;  
+    border-radius: 5px;  
+    /*background: grey;  */
+    /*display: inline-block;  */
+    color: white;  
+    text-align: center;  
+}  
+#clocks div > span{  
+    padding: 20px;  
+    border-radius: 5px;  
+    /*background: lightgray;  */
+    display: inline-block; 
+
+    font-family: Roboto,sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    padding: 0 24px; 
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    /*font-family: 'Changa', sans-serif;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+}  
+
+.clocks{
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.small{
+  font-family: 'Changa', sans-serif;
+  font-size: 2rem;
+}
+#second_value{
+  /*background-color: rgb(244, 124, 124);*/
+  color: rgb(244, 124, 124);
+}
+
+@media screen and (max-width: 600px) {
+  body{
+    /*background-color: gray;*/
+  }
+  .clocks{
+      /*left: 50%;
+      top: 50%;*/
+      display: grid;
+   /*   justify-content: center;
+      position: absolute;
+      transform: translate(-50%, -50%);*/
+      grid-template-columns: 1fr 1fr ;
+  }
+  #clocks div > span {
+    width: 100px;
+  }
+  .days_value{
+    background-color: rgb(244, 124, 124);
+  }
+}
